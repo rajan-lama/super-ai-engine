@@ -8,7 +8,7 @@
  * Version:           1.0.0
  * Requires at least: 6.7
  * Requires PHP:      7.4
- * Author:            Rajan Lama
+ * Author:            Rithemes
  * Author URI:        https://rithemes.com
  * License:           GPLv2
  * License URI:       https://spdx.org/licenses/GPL-2.0-or-later.html

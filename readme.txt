@@ -1,5 +1,5 @@
 === Super AI Engine ===
-Contributors: lamarajan
+Contributors: rithemes,lamarajan
 Tags: ai, chatbot, gpt, claude, openai
 Requires at least: 6.0
 Tested up to: 6.8
