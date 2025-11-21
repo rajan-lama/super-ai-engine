@@ -8,7 +8,7 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Believe in Democratize AI with WordPress. Your site can now chat, write poetry, solve problems, and maybe make you coffee.
+Believe in Democratize AI with WordPress. Your site can now chat, write poetry, solve problems, etc. with its own intelligent
 
 == Description ==
 
@@ -18,7 +18,7 @@ Please make sure you read the [disclaimer](https://rithemes.com/super-ai-engine/
 
 == Quick Intro ==
 
-Hello! ☀️ I built Super AI Engine to bring Gemini, OpenAI, Claude, and other AI models into WordPress. Create chatbots that understand your content, generate posts in your voice, translate instantly, create images, or build custom AI tools.
+Hello! ☀️ I built Super AI Engine to bring Gemini and other AI models into WordPress. Create chatbots that understand your content, generate posts in your voice, translate instantly, create images, or build custom AI tools.
 
 For developers: internal APIs, REST endpoints, function calling, and MCP support. Build AI features, automate workflows, or create SaaS applications on WordPress.
 
@@ -28,41 +28,11 @@ You'll be having a blast before you've explored everything.
 
 == Core Modules ==
 
-🤖 **Chatbots**
-Create intelligent chatbots with customizable themes, realtime audio, and multi-file support. Features modular UI Builder, conversation memory, and MacOS-style components.
-
 🎨 **Content & Images**
 Generate content, translate text, create images from prompts, and use Copilot in the WordPress editor for instant suggestions and rewrites.
 
-📝 **AI Forms**
-Build custom AI-powered forms that handle text, images, audio, or file uploads. Create advanced apps with conditional logic.
-
-🧠 **Knowledge & Embeddings**
-Fine-tune models, create embeddings, and build knowledge bases from PDFs. Connect with Pinecone, Chroma, Qdrant, or OpenAI Vector Store for semantic search.
-
 🔧 **Function Calling**
 Connect AI to WordPress functions, WooCommerce, appointments, or custom APIs. Let AI interact with your site's data and services in real-time.
-
-🔌 **Developer Tools**
-Internal APIs, REST endpoints, MCP support, and extensive hooks. Build AI-driven features, automate workflows, or create SaaS applications.
-
-== 🤖 Chatbots ==
-
-Transform visitor interactions with intelligent, customizable chatbots.
-
-**Features:**
-
-* Modular UI Builder with containers, headers, footers
-* Customizable themes and MacOS-style components
-* Realtime audio conversations
-* Multi-file upload support
-* Discussion memory and history
-* Cross-site embedding
-* GDPR compliance tools
-
-== 🎨 Content & Images ==
-
-Create, refine, and visualize content with AI assistance.
 
 **Content Generation:**
 
@@ -70,43 +40,6 @@ Create, refine, and visualize content with AI assistance.
 * Translate naturally across languages
 * Copilot integration in WordPress editor
 * Real-time suggestions and rewrites
-
-**Image Tools:**
-
-* Create images from text prompts
-* Edit existing images with AI
-* Vision AI for image analysis
-* Automatic alt text generation
-
-== 📝 AI Forms ==
-
-Build powerful AI-driven forms and applications.
-
-**Capabilities:**
-
-* Text, image, audio, and file inputs
-* Conditional logic and validation
-* Custom AI-powered apps
-* Multi-step workflows
-* Result templates
-
-== 🧠 Knowledge & Embeddings ==
-
-Create intelligent knowledge bases and semantic search.
-
-**Vector Databases:**
-
-* Pinecone, Chroma, Qdrant
-* OpenAI Vector Store
-* Automatic synchronization
-* Dimension validation
-
-**Smart Features:**
-
-* PDF import with auto-chunking
-* AI-powered search (Simple, Context-Aware, Smart)
-* Content classification
-* Personalized recommendations
 
 == 🔧 Developer Tools ==
 
@@ -118,17 +51,6 @@ Extend WordPress with AI capabilities.
 * REST API for external applications
 * MCP (Model Context Protocol) support
 * Function calling framework
-
-**Integration:**
-
-* Works with SEO Engine, Social Engine, Code Engine
-* Media File Renamer support
-* Custom shortcodes and hooks
-* Extensive WordPress filters
-
-**Resources:**
-
-* [Code Examples & Customization](https://ai.thehiddendocs.com/examples/)
 
 == MCP (Model Context Protocol) ==
 
@@ -152,14 +74,6 @@ Super AI Engine turns your WordPress site into an intelligent MCP server. AI age
 **Plugin Integration:**
 
 Super AI Engine can also connect to external MCP servers, extending your chatbots with tools and services beyond WordPress.
-
-== Pro Features ==
-
-* AI Forms
-* Embeddings & Vector Databases
-* Advanced Usage Control
-* Realtime Audio Chatbot
-* Priority Support
 
 == Why Super AI Engine? ==
 
@@ -188,13 +102,13 @@ Weekly updates based on real user feedback. We listen, we improve.
 
 == Disclaimer ==
 
-Super AI Engine is a plugin that helps you to connect your websites to AI services. You need your own API keys and must follow the rules set by the AI service you choose. For OpenAI, check their [Terms of Service](https://openai.com/terms/) and [Privacy Policy](https://openai.com/privacy/). It is also important to check your usage on the [OpenAI website](https://platform.openai.com/usage) for accurate information. Please do so with other services as well.
+Super AI Engine is a plugin that helps you to connect your websites to AI services. You need your own API keys and must follow the rules set by the AI service you choose. For OpenAI, check their [Terms of Service](https://ai.google.dev/gemini-api/terms, https://openai.com/terms/) and [Privacy Policy](https://ai.google.dev/gemini-api/docs/usage-policies, https://openai.com/privacy/). It is also important to check your usage on the [OpenAI website](https://platform.openai.com/usage) for accurate information. Please do so with other services as well.
 
 The developer of AI Engine and related parties are not responsible for any issues or losses caused by using the plugin or AI-generated content. You should talk to a legal expert and follow the laws and regulations of your country. AI Engine does only store data on your own server, and it is your responsibility to keep it safe. AI Engine's full disclaimer is [here](https://rithemes.com/super-ai-engine/disclaimer/).
 
 == Compatibility ==
 
-Please be aware that there may be conflicts with certain caching or performance plugins, such as SiteGround Optimizer and Ninja Firewall. To prevent any issues, ensure that AI Engine is excluded from these plugins.
+Please be aware that there may be conflicts with certain caching or performance plugins, such as SiteGround Optimizer and Ninja Firewall. To prevent any issues, ensure that Super AI Engine is excluded from these plugins.
 
 == Frequently Asked Questions ==
 
