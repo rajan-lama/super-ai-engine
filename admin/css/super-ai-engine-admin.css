@@ -1,0 +1,126 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+.sai-engine-dashboard {
+    margin: 0 -20px;
+}
+
+.sai-engine-dashboard-header {
+    background-color: #3960bb;
+    padding: 20px;
+    border-bottom: 1px solid #e1e4e8;
+}
+
+.sai-engine-dashboard-header h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #ffffff;
+}
+
+.sai-engine-dashboard-header p {
+    font-size: 16px;
+    color: #fff;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.sai-engine-dashboard-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sai-engine-dashboard-logo-section {
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    gap: 15px;
+}
+
+.sai-engine-dashboard-title-section {
+    padding: 15px 0;
+}
+
+.sai-engine-dashboard-header-content-right {
+    align-content: center;
+    margin-right: 20px;
+}
+
+.sai-engine-button {
+    background-color: #6e95f0;
+    color: #fff;
+    padding: 10px 15px;
+    margin-left: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    border: 1px solid #9fbcff;
+}
+
+.sai-engine-button:hover {
+    background-color: #5082f7;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.sai-engine-button.get-pro,
+.sai-engine-button.get-support {
+    background-color: #3382ff;
+    color: #fff;
+    padding: 10px 15px;
+    margin-left: 10px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.sai-engine-button.get-pro:hover,
+.sai-engine-button.get-support:hover {
+    background-color: #fff;
+    color: #3382ff;
+}
+
+.sai-engine-button.settings {
+    color: #fff;
+    padding: 0px;
+    border: 0px;
+    background: transparent;
+}
+
+.sai-engine-button.settings .dashicons,
+.sai-engine-button.settings .dashicons-before::before {
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    margin-top: -10px;
+}
+
+.sai-engine-button-logo-link{
+    line-height: 1;
+}
+
+.sai-engine-dashboard-container {
+  display: block;
+  padding: 20px;
+}
+
+.sai-engine-dashboard-row {
+  display: flex;
+  gap: 20px;
+}
+
+.sai-engine-dashboard-col-3 {
+  width: 25%;
+}
+
+.sai-engine-dashboard-col-6 {
+  width: 50%;
+}
+
+.sai-engine-dashboard-row {
+  margin-bottom: 20px;
+}
