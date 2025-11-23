@@ -24,18 +24,49 @@
                     <?php wp_nonce_field('sai_engine_generate'); ?>
                     <input type="hidden" name="action" value="sai_engine_generate" />
                     <p>
-                        <h5 class="sai_engine_prompt">Prompt</h5>
-                        <textarea id="sai_engine_prompt" name="prompt" rows="6"></textarea>
+                        <h4 class="sai_engine_title">Title</h4>
+                        <input id="sai_engine_title" name="post_title" type="text"/>
                     </p>
                     <p>
-                        <h5 class="sai_engine_title">Post Title</h5>
-                        <input id="sai_engine_title" name="post_title" type="text" style="width:60%" />
+                        <h4 class="sai_engine_prompt">Prompt</h4>
+                        <textarea id="sai_engine_prompt" name="prompt" rows="6"></textarea>
                     </p>
+                    
                     <?php submit_button('Generate & Create Post'); ?>
                 </form>
             </div>
-            <div class="sai-engine-dashboard-col-6">Col-6</div>
-            <div class="sai-engine-dashboard-col-3">Col-3</div>
+            <div class="sai-engine-dashboard-col-6">
+                <form method="post" action="<?php echo esc_url(admin_url('admin-post.php')); ?>">
+                    <?php wp_nonce_field('sai_engine_generate'); ?>
+                    <input type="hidden" name="action" value="sai_engine_generate" />
+                    <p>
+                        <h4 class="sai_engine_title">Title</h4>
+                        <input id="sai_engine_title" name="post_title" type="text"/>
+                    </p>
+                    <p>
+                        <h4 class="sai_engine_prompt">Prompt</h4>
+                        <textarea id="sai_engine_prompt" name="prompt" rows="6"></textarea>
+                    </p>
+                    
+                    <?php submit_button('Generate & Create Post'); ?>
+                </form>
+            </div>
+            <div class="sai-engine-dashboard-col-3">
+                <form method="post" action="<?php echo esc_url(admin_url('admin-post.php')); ?>">
+                    <?php wp_nonce_field('sai_engine_generate'); ?>
+                    <input type="hidden" name="action" value="sai_engine_generate" />
+                    <p>
+                        <h4 class="sai_engine_title">Title</h4>
+                        <input id="sai_engine_title" name="post_title" type="text"/>
+                    </p>
+                    <p>
+                        <h4 class="sai_engine_prompt">Prompt</h4>
+                        <textarea id="sai_engine_prompt" name="prompt" rows="6"></textarea>
+                    </p>
+                    
+                    <?php submit_button('Generate & Create Post'); ?>
+                </form>
+            </div>
         </div>
     </div>
 

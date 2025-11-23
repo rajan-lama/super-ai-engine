@@ -4,7 +4,7 @@
  */
 
 .sai-engine-dashboard {
-    margin: 0 -20px;
+    margin: 0 0 0 -20px;
 }
 
 .sai-engine-dashboard-header {
@@ -44,7 +44,6 @@
 
 .sai-engine-dashboard-header-content-right {
     align-content: center;
-    margin-right: 20px;
 }
 
 .sai-engine-button {
@@ -123,4 +122,33 @@
 
 .sai-engine-dashboard-row {
   margin-bottom: 20px;
+}
+
+.sai-engine-dashboard-container form {
+  background: #fbfbfb;
+  border-radius: 5px;
+  border: 1px solid #e6dede;
+  padding: 20px;
+}
+
+.sai-engine-dashboard-container form input[type="text"], 
+.sai-engine-dashboard-container form textarea {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.sai-engine-dashboard-container form input[type="submit"],
+.sai-engine-dashboard-container form button {
+  background-color: #3960bb;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
 }

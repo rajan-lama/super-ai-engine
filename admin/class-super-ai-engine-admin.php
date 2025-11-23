@@ -59,6 +59,7 @@ class Super_Ai_Engine_Admin {
 
 		add_action('admin_menu', [ $this, 'super_ai_engine_admin_menu'] );
 		add_action('admin_post_sai_engine_generate', [$this, 'handle_generate']);
+		add_action('admin_post_sai_engine_save_settings', [$this, 'save_settings']);
 
 	}
 
@@ -357,6 +358,39 @@ class Super_Ai_Engine_Admin {
 		exit;
 	}
 
+	public function save_settings()
+	{
+		if ( ! current_user_can( 'manage_options' ) ) {
+			wp_die( __( 'Unauthorized', 'super-ai-engine' ), 403 );
+		}
+
+    // Verify nonce. Field name is 'sai_engine_settings_nonce'
+    check_admin_referer( 'sai_engine_settings', 'sai_engine_settings_nonce' );
+
+    // Load existing options (so we merge safely)
+    $opts = get_option( $this->option_name, [] );
+
+    // Update API key if present
+    if ( isset( $_POST[ $this->option_name ] ) && is_array( $_POST[ $this->option_name ] ) ) {
+        // sanitize incoming values
+        $incoming = wp_unslash( $_POST[ $this->option_name ] );
+        if ( isset( $incoming['api_key'] ) ) {
+            $opts['api_key'] = sanitize_text_field( $incoming['api_key'] );
+        }
+        if ( isset( $incoming['model'] ) ) {
+            $opts['model'] = sanitize_text_field( $incoming['model'] );
+        }
+    }
+
+    // Save the whole options array
+    update_option( $this->option_name, $opts );
+
+    // Redirect back with success message
+    $redirect_to = wp_get_referer() ? wp_get_referer() : admin_url( 'admin.php?page=sai-engine-settings' );
+    $redirect_to = add_query_arg( 'sai_msg', 'saved', $redirect_to );
+    wp_safe_redirect( $redirect_to );
+    exit;
+	}
 }
 
 

@@ -19,7 +19,6 @@ if (!current_user_can('manage_options')) {
 $options = get_option( $this->option_name, [] );
 
 $option_name = $this->option_name;
-
 ?>
 
 <div class="sai-engine-dashboard">
@@ -29,26 +28,13 @@ $option_name = $this->option_name;
     <div class="sai-engine-dashboard-container">
         <div class="sai-engine-dashboard-row">
             <div class="sai-engine-dashboard-col-6">
-                <form method="post"  action="">
-                <h3><?php esc_html_e( 'API Key', 'super-ai-engine' ); ?></h3>
-                    <?php 
-                        $opts = get_option( $this->option_name, [] );
-                        $val = esc_attr( $opts['api_key'] ?? '' );
-                    ?>
-                <input type='text' name="<?php echo $option_name; ?>[api_key]" value='<?php echo esc_html( $val) ; ?>' style='width:100%' />
-                <?php submit_button(); ?>
-                    <?php
-                    // settings_fields($this->option_name);
-                    // do_settings_sections('sai_enginee');
-                    // $opts = get_option($this->option_name, []);
-
-                    // var_dump( $opts);
-                    // $val = esc_attr($opts['api_key'] ?? '');
-                    // echo "<input type='text' name='{$this->option_name}[api_key]' value='$val' style='width:60%' />";
-                    // echo "<p class='description'>Your Google API key (or leave empty if you plan to use service account server-side auth).</p>";
-                    
-                    // submit_button();
-                    ?>
+                <form method="post"  action="<?php echo esc_url( admin_url('admin-post.php') ); ?>">
+                    <?php wp_nonce_field( 'sai_engine_settings', 'sai_engine_settings_nonce' ); ?>
+                    <h3><?php esc_html_e( 'API Key', 'super-ai-engine' ); ?></h3>
+                    <input type="hidden" name="action" value="sai_engine_save_settings" />
+                    <input type='password' name="<?php echo esc_attr( $option_name ); ?>[api_key]" value='<?php echo esc_attr( $options['api_key'] ?? '' ); ?>' style='width:100%' />
+                    <p class='description'>Please insert your google api key. You can create you api key from <a href="https://aistudio.google.com/api-keys">here.</a></p>
+                    <?php submit_button(); ?>
                 </form>
             </div>
             <div class="sai-engine-dashboard-col-6"></div>
