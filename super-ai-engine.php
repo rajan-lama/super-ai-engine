@@ -16,7 +16,7 @@
  * Plugin Name:       Super AI Engine
  * Plugin URI:        https://rithemes.com/wordpress-plugins/super-ai-engine
  * Description:       Super AI Engine is a WordPress Plugin to connect WordPress with AI. We believe in Democratize AI. With this plugin, Your site can now chat, write poetry, create contents, videos, audio, solve problems, and maybe make you coffee. Please make sure you read the [disclaimer](https://rithemes.com/super-ai-engine/disclaimer/). For more information, check the official website of [Super AI Engine](https://rithemes.com/wordpress-plugins/super-ai-engine/).
- * Version:           1.0.0
+ * Version:           1.0.1
  * Author:            Ri Themes
  * Author URI:        https://rithemes.com/
  * License:           GPL-2.0+

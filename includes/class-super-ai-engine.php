@@ -71,7 +71,7 @@ class Super_Ai_Engine {
 		if ( defined( 'SUPER_AI_ENGINE_VERSION' ) ) {
 			$this->version = SUPER_AI_ENGINE_VERSION;
 		} else {
-			$this->version = '1.0.0';
+			$this->version = '1.0.1';
 		}
 		$this->plugin_name = 'super-ai-engine';
 

@@ -1,6 +1,6 @@
 <?php 
 
-define( 'SUPER_AI_ENGINE_VERSION', '1.0.0' );
+define( 'SUPER_AI_ENGINE_VERSION', '1.0.1' );
 define( 'SUPER_AI_ENGINE_PLUGIN_NAME', 'Super AI Engine' );
 define( 'SUPER_AI_ENGINE_PLUGIN_SLUG', 'super-ai-engine' );
 define( 'SUPER_AI_ENGINE_OPTION_NAME', 'sai_engine_settings' );
