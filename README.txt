@@ -146,5 +146,9 @@ Report security vulnerabilities through the [Patchstack Vulnerability Disclosure
 
 == Changelog ==
 
-= 1.0.0 =
+= 1.0.0 = 
 * Initial Release 
+
+= 1.0.1 = 
+* Fixed the bug on Api Form. 
+* Seperated content generator and post generator portion for generate content section.

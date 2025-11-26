@@ -23,31 +23,36 @@
                 <form method="post" action="<?php echo esc_url(admin_url('admin-post.php')); ?>">
                     <?php wp_nonce_field('sai_engine_generate'); ?>
                     <input type="hidden" name="action" value="sai_engine_generate" />
-                    <p>
+                    <!-- <p>
                         <h4 class="sai_engine_title">Title</h4>
                         <input id="sai_engine_title" name="post_title" type="text"/>
-                    </p>
+                    </p> -->
                     <p>
-                        <h4 class="sai_engine_prompt">Prompt</h4>
+                        <h4 class="sai_engine_prompt">Topic</h4>
                         <textarea id="sai_engine_prompt" name="prompt" rows="6"></textarea>
                     </p>
+                    <button type="button" id="sai_engine_generate_content_button" class="button button-primary">Generate Content</button>
                     
-                    <?php submit_button('Generate & Create Post'); ?>
+                    <?php // submit_button('Generate'); ?>
                 </form>
             </div>
             <div class="sai-engine-dashboard-col-6">
                 <form method="post" action="<?php echo esc_url(admin_url('admin-post.php')); ?>">
-                    <?php wp_nonce_field('sai_engine_generate'); ?>
-                    <input type="hidden" name="action" value="sai_engine_generate" />
+                    <?php wp_nonce_field('sai_engine_create_post'); ?>
+                    <input type="hidden" name="action" value="sai_engine_create_post" />
                     <p>
                         <h4 class="sai_engine_title">Title</h4>
                         <input id="sai_engine_title" name="post_title" type="text"/>
                     </p>
                     <p>
-                        <h4 class="sai_engine_prompt">Prompt</h4>
-                        <textarea id="sai_engine_prompt" name="prompt" rows="6"></textarea>
+                        <h4 class="sai_engine_title">Content</h4>
+                        <textarea id="sai_engine_content" name="post_content" rows="10"></textarea>
                     </p>
-                    
+                    <p>
+                        <h4 class="sai_engine_title">Excerpt</h4>
+                        <textarea id="sai_engine_excerpt" name="post_excerpt" rows="6"></textarea>
+                    </p>
+                    </p>
                     <?php submit_button('Generate & Create Post'); ?>
                 </form>
             </div>
