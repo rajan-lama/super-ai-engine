@@ -33,6 +33,8 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 
+include_once plugin_dir_path( __FILE__ ) . 'vendor/autoload.php';
+
 include_once plugin_dir_path( __FILE__ ) . 'config.php';
 
 /**

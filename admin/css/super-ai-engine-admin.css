@@ -162,3 +162,12 @@
   padding: 10px;
   background-color: #3960bb;
 }
+
+.sai_input {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 15px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
